@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AppMascotas</string>
+    <string name="nombre_mascota">Dark</string>
+    <string name="rating_mascota">0</string>
+</resources>

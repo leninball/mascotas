@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvContacto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/top"
+    card_view:cardCornerRadius="@dimen/corner_radius_cv"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="245dp"
+        android:orientation="vertical"
+        android:padding="7dp">
+
+        <ImageView
+            android:id="@+id/imgFotoMascota"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:background="#ff5722"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/dog_icon_36985" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <ImageButton
+                android:id="@+id/btnLike"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/dog_bone_48" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/left"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvNombreMascota"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/nombre_mascota"
+                    android:textSize="@dimen/nombre_mascota"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvRatingMascota"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rating_mascota"
+                    android:textSize="@dimen/nombre_mascota"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="15dp"
+                    android:textStyle="bold"
+                    />
+                <ImageButton
+                    android:id="@+id/btnRating"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="12dp"
+                    android:background="@drawable/bone_yellow" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
